@@ -47,7 +47,7 @@ public abstract class Futbolista implements Comparable{
     }
 
     public boolean equals(Futbolista f){
-        if(this.compareTo(f) == 0){
+        if(this.compareTo(f) == 0 && this.hashCode()==f.hashCode()){
             return true;
         }
         return false;
